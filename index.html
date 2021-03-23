@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <section id = "navbar">
+        <nav class = "nav">
+            <img src="images/mylogo.png" alt="logo">
+           
+        <ul>
+            <li><a href="#compoundInterest">Compound Interest</a></li>
+            <li><a href="#emergencyFund">Emergency Fund</a></li>
+            <li><a href="#paymentSection">Payment Calculation</a></li>
+        </ul>
+        </nav>
+        
+    </section>
+
+
+
+    <h1 id = "title">JazFinance</h1>
+
+
+    <div class = "imgContainer">
+        <img src="images/fin1.jpg" alt="img1" >
+        <img src="Images/fin2.jpg" alt="img2">
+        <img src="Images/fin3.jpg" alt="img3">
+    </div>
+    </div>
+
+    <div id = "finPageInfo">
+        <p>This is an application that has calculators for computing popular financial metrics, that are very important, and<br>
+           all play major roles in our financial wellness. I added educative material so that the people who are not as <br>
+           financially literate as some can understand the metrics, and use these metrics to change their family tree. Many<br>
+           people have decided recently due to the uncertanity that the pandemic has caused that they want to stop <br>
+           living paycheck to paycheck, because they are fed up with all of the fear that this lifestyle causes. I hope this<br>
+           application can provide people the metrics needed to show them that they can win with money by avoiding<br>
+           debt when possible, saving for an emergency fund, and by investing with the power of compound interest<br>
+        </p>
+    </div>
+    
+    
+    <section id = "compoundInterest">
+       <div id = "Compound Interest Calculator">
+        <div id = "Compound Interest-head">
+            <h1 id = ci-title>Compound Interest</h1>
+        </div>
+        <div class = "imgContainer1">
+            <img src="images/cim (1).jpg" alt="cimimg1" >
+            <img src="Images/cim (2).jpg" alt="cimimg2">
+            <img src="Images/cim (3).jpg" alt="cimimg3">
+        </div>
+        <div id = "compoundInterestInfo">
+            <p>
+                Compound interest is a very important concept when it comes to financial wellness. In simple terms this is the<br> 
+                interest earned on previous interest.This means when you invest money, and it earns interest the next time it <br>
+                earns interest it will earn interest on the original amount invested plus of top of the previous interest which<br> 
+                causes it to compound over periods of time. This is same for debts except the interest is not going to you, its<br>
+                coming from you, which is why it is important to keep your debt as low as possible in order to maximize your <br>
+                wealth.For example if you purchase a home for $ 200,000 on a 30 year fixed rate mortgage at four percent interest<br>
+                you will actually pay about $ 340,000 by the end of the mortgage which means the bank will will have an roi of <br>
+                about 70 percent over the life of the loan before all of their fees, and and assuming you dont slip up at all along<br>
+                the way. If you were able to opt for a 15 year mortgage on that same $ 200,000 dollar home you would only pay about<br>
+                $ 301,000 which saves you $ 39,000 in interest expense that you can invest. If you invested this 39,000 that you<br>
+                saved for 15 years that you would have left on your 30 year note, at the s&p 500s average return of 10 percent<br>
+                compounded annually that $39,000 dollars has now become $162,912.68 saved all because you minimized your time <br>
+                spent in debt. This is why learning about compound interest is really cool, and can help you to grow your net<br>
+                worth, and make wise financial descisions. Please play around with the calculator I built in order to help you<br>
+                dream, and help to plan for your future.<br><br><br>
+                <a href = "#compoundInterestCalc" id="cpiCalcLink" >Compound Interest Calculator</a>
+                <br><br><br><br><br><br><br><br><br>
+
+            </p>
+        </div>
+    </section>
+
+    <br><br>
+
+
+    <section id = "compoundInterestCalc">
+
+
+        <div class = "calculator">
+            <h2 id="ci-calc">Compound Interest Calculator</h2>
+            <p>Initial Principle Invested: <input id="begprin" type = "number" min="0"></p>
+            <p>Length of time in years: <input id="time" type="number" min="0"></p>
+            <p>Estimated Interest Rate: % <input id="eis" type="number" min="0" max="100"></p>
+            <button id = "btn2" onclick="compoundCalc()">Calculate</button> 
+            <br><br><br>
+        </div>
+       
+        <div id = "cpmFreq">
+
+          
+<br>
+<br>
+            <h4>Compounded Annually</h4>
+                <p id = 'cpmAnn' ></p>
+
+            <h4>Compounded Monthly</h4>
+                <p id = 'cpmMon' ></p>
+
+            <h4>Compounded Daily</h4>
+                <p id = 'cpmDai' ></p>
+                <br><br><br><br>
+        </div>
+        </div>
+    </section>
+   
+
+    <section id = "emergencyFund">
+
+        <div id = "emfund-head">
+            <h1 id = emfund-title>Emergency Fund</h1>
+            
+            <div class = "imgContainer2">
+                <img src="images/emim (1).jpg" alt="efimg1" >
+                <img src="Images/emim (2).jpg" alt="efimg2">
+                <img src="Images/emim (3).jpg" alt="efimg3">
+            </div>
+
+            <div id = "emergencyFundInfo">
+                <p>
+                    This is one of the most important financial topics to help increase financial wellness. Many people are realizing with the<br> 
+                    recent pandemic that emergency funds are absolutely vital in todays economy. In the past alot of people would spend their<br>
+                    whole life at the same job, and that is much less common today. Job security is not the same as it was then making the <br>
+                    emergency funds a vital financial concept for people to understand,and set aside money for. Most fincancial resources have<br>
+                    always reccomended 3-6 months of expenses as a proper emergency fund, but with the recent pandemic stretching over 1 year.<br>
+                    I think that it is important that when we have extra money we work on getting our emergency fund up to about 6-12months of<br>
+                    expenses. An emergency fund is only to be used for emergencies. This is not to be used because you overspent as a safety <br>
+                    net. It is for unexpected emergencies such as medicial emergencies, major car or applicance repairs, etc. The emergency<br>
+                    fund can be a very important tool to break credit card, and personal debt borrowing because when you have an emergency<br>
+                    that causes you to think irrationally you will have the money you need which will help you make wise descisions. Please<br>
+                    come up with a budget that includes all of your expenses, and input the expenses below to calculate a proper emergency <br>
+                    fund. When you see how much you need for your emergency fund, it may seem daunting, but you can attack this overtime. I<br>
+                    think it is important to get this in place before investing, because it will allow you to not treat your investments as<br>
+                    an emergency fund, so that you can hold longterm, in order for your investment to grow, and accumulate the compound<br>
+                    interest that we talked about before. 
+
+                    <br><br><br>
+                    <a href = "#emFundCalc" id="emergencyFundCalcLink" >Emergency Fund Calculator</a>
+                    <br><br><br><br><br><br><br><br><br>
+                </p>
+            </div>
+              
+        </div>
+    </section>
+
+    <section id = "emFundCalc">
+    
+            <div id = "emergencyFundCalculator">
+                <h2 id="emf-calc">Emergency Fund Calculator</h2>
+
+                <p>Mortgage/rent: $ <input id="num1" type="number" min="0" max="10000000"></p>
+                <p>Utilities: $ <input id="num2" type="number" min="0" max="1000000"  ></p>
+                <p>Insurance: $ <input id="num3" type="number" min="0" max="10000000"></p>
+                <p>Food:  $ <input id="num4" type="number" min="0" max="1000000"  ></p>
+                <p>Internet:  $ <input id="num5" type="number" min="0" max="1000000"  ></p>
+                <p>Cellular:  $ <input id="num6" type="number" min="0" max="10000000"></p>
+                <p>Car Payment:  $ <input id="num7" type="number" min="0" max="1000000"  ></p>
+                <p>Personals Debt: $ <input id="num8" type="number" min="0" max="10000000"></p>
+                <p>Child Care :  $ <input id="num9" type="number" min="0" max="1000000"  ></p>
+                <p>Other Expenses:  $ <input id="num10" type="number" min="0" max="1000000"  ></p>
+    
+                <button id = "btn1" onclick="computeNum()">=</button> 
+                <br>
+            <div id = "emFundType">
+                <h3>Standard Emergency Fund</h3>
+                <p id = 'equals' ></p>
+    
+                <h3>Conservative Emergency Fund</h3>
+                <p id = 'consequals' ></p>
+                <br><br>   <br><br>   <br><br>
+            </div>
+            </div>
+
+        </section>
+
+    
+  <section id = "paymentSection">
+        <div id = "payment-head">
+            <h1 id = payment-title>Monthly Payment Calculation</h1>
+            
+            <div class = "imgContainer3">
+                <img src="images/pmt (1).jpg" alt="pmtimg1" >
+                <img src="Images/pmt (2).jpg" alt="pmtimg2">
+                <img src="Images/pmt (3).jpg" alt="pmtimg3">
+            </div>
+
+            <div id = "paymentInfo">
+                <p>
+                   Calculating the monthly payment of a debt that you have decided to take on is a very important and common thing.<br>
+                   You can use this calculator to see what your payments will be, and what the best term of your loan would be. Some <br>
+                   of the payments we may be interested in calculating include things like home mortgages, auto loans, personal debts<br>
+                   , etc. Debts like autoloans and personal debts are in my opinion are higher risk because of the value of the asset<br>
+                   almost always going down, and should be avoided of possible.You can also use this in sequence with the compound <br>
+                   interest calculator, to determine if a debt is finciacially smart, and the opportunity cost of that debt. As we<br>
+                   talked about before changing the term of a 30 year mortgage to a 15 year mortgage saved us close to $ 40,000<br>
+                   dollars, and when we factored in the interest that could have been earned it saved us over $ 160,000 so it is<br>
+                   really important to understand these concepts, and use these calculators to make the best decision, to improve,<br>
+                   our fincancial future.<br><br><br>
+                   <a href = "#paymentCalculator" id="paymentCalcLink" >Payment Calculator</a>
+                   <br><br><br><br><br><br><br><br><br>
+                </p>
+                <br><br>
+        </div>
+    </section>
+
+    <section id = 'paymentCalculator'>
+
+        <div id = "loanCalculator">
+            <h2 id="pmtCalculator">Payment Calculator</h2>
+            <p>Loan Amount: $<input id="amount" type="number" min="1" max="10000000"></p>
+            <p>Interest Rate: <input id="interest_rate" type="number" min="0" max="100" value="10" step=".1" >%</p>
+            <p>Months: <input id="months" type="number" min="1" max="720" value="1" step="1" ></p>
+            <button id="payment" onclick="computeLoan()">My Payment</button> 
+            <br><br>      <br><br>       <br><br>       <br><br>       <br><br>       <br><br>       <br><br>       <br><br>       <br><br>         
+        </div>
+    </section>
+
+    
+
+
+
+ 
+    
+    <script src="app.js"></script>
